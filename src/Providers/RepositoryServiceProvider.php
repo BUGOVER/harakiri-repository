@@ -36,8 +36,6 @@ class RepositoryServiceProvider extends ServiceProvider
         ]);
 
         $this->mergeConfigFrom(__DIR__ . '/../../../config/repository.php', 'repository');
-
-        $this->loadTranslationsFrom(__DIR__ . '/../../../resources/lang', 'repository');
     }
 
 
@@ -49,8 +47,8 @@ class RepositoryServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands(RepositoryCommand::class);
-        $this->commands(ValidatorCommand::class);
         $this->commands(ServiceCommand::class);
+        $this->commands(ValidatorCommand::class);
         $this->commands(CriteriaCommand::class);
     }
 

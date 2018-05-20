@@ -26,7 +26,6 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Harakiri\\Repository\\Providers\\EventServiceProvider",
         "Harakiri\\Repository\\Providers\\RepositoryServiceProvider"
       ]
     }
