@@ -211,7 +211,7 @@ abstract class Generator
                 $path = config('repository.generator.paths.validators', 'Validators');
                 break;
             case ('criteria' === $class):
-                $path = config('repository.generator.paths.criteria', 'Criteria');
+                $path = config('repository.generator.paths.criteria', 'HarakiriCriteria');
                 break;
 //            case ('migrat' === $class):
 //                $path = config('repository.generator.paths.migrat', 'Migration');

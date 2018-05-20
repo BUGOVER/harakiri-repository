@@ -28,7 +28,7 @@ return [
             'repositories' => 'Repositories',
             'interfaces' => 'Repositories',
             'validators' => 'Validators',
-            'criteria' => 'Criteria'
+            'criteria' => 'HarakiriCriteria'
         ]
     ]
 ];

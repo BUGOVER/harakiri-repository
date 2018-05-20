@@ -7,11 +7,11 @@ use Harakiri\Repository\Contracts\CriteriaInterface;
 use Harakiri\Repository\Contracts\RepositoryInterface;
 
 /**
- * Class Criteria
- * @package harakiri_repository_pattern\Repository\Criteria
+ * Class HarakiriCriteria
+ * @package harakiri_repository_pattern\Repository\HarakiriCriteria
  * @author Anderson Andrade <contato@andersonandra.de>
  */
-abstract class Criteria implements CriteriaInterface
+abstract class HarakiriCriteria implements CriteriaInterface
 {
     /**
      * @param $model

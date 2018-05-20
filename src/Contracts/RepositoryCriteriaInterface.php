@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Harakiri\Repository\Contracts;
 
-use Harakiri\Repository\Criteria\Criteria;
+use Harakiri\Repository\Criteria\HarakiriCriteria;
 use Illuminate\Support\Collection;
 
 
@@ -16,7 +16,7 @@ interface RepositoryCriteriaInterface
 {
 
     /**
-     * Push Criteria for filter the query
+     * Push HarakiriCriteria for filter the query
      *
      * @param $criteria
      *
@@ -25,7 +25,7 @@ interface RepositoryCriteriaInterface
     public function pushCriteria($criteria);
 
     /**
-     * Pop Criteria
+     * Pop HarakiriCriteria
      *
      * @param $criteria
      *
@@ -39,10 +39,10 @@ interface RepositoryCriteriaInterface
     public function getCriteria();
 
     /**
-     * @param Criteria $criteria
+     * @param HarakiriCriteria $criteria
      * @return mixed
      */
-    public function getByCriteria(Criteria $criteria);
+    public function getByCriteria(HarakiriCriteria $criteria);
 
     /**
      * @param bool $status

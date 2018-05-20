@@ -34,7 +34,7 @@ class CriteriaCommand extends Command
      *
      * @var string
      */
-    protected $type = 'Criteria';
+    protected $type = 'HarakiriCriteria';
 
     /**
      * Execute the command.
@@ -47,9 +47,7 @@ class CriteriaCommand extends Command
     }
 
     /**
-     * Execute the command.
-     *
-     * @return void
+     * @return bool
      */
     public function fire()
     {
@@ -59,7 +57,7 @@ class CriteriaCommand extends Command
                 'force' => $this->option('force'),
             ]))->run();
 
-            $this->info("Criteria created successfully.");
+            $this->info("HarakiriCriteria created successfully.");
         } catch (FileAlreadyExistsException $ex) {
             $this->error($this->type . ' already exists!');
             return false;
