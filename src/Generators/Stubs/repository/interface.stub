@@ -1,0 +1,16 @@
+<?php
+declare(strict_types=1);
+
+$NAMESPACE$
+
+use Harakiri\Repository\Contracts\RepositoryInterface;
+
+/**
+ * Interface $CLASS$Repository.
+ *
+ * @package $NAMESPACE$
+ */
+interface $CLASS$Repository extends RepositoryInterface
+{
+    //
+}

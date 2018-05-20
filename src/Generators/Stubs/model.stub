@@ -1,0 +1,22 @@
+<?php
+declare(strict_types=1);
+
+$NAMESPACE$
+
+use App\Models\BaseModel;
+
+/**
+ * Class $CLASS$.
+ *
+ * @package $NAMESPACE$
+ */
+class $CLASS$ extends BaseModel
+{
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = $FILLABLE$;
+
+}

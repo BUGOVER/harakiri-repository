@@ -1,0 +1,34 @@
+{
+  "name": "harakiri/repository",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "Laravel full Repository Pattern easy DI && custom criteria",
+  "keywords": [
+    "laravel repository pattern",
+    "customization"
+  ],
+  "authors": [
+    {
+      "name": "Harakiri",
+      "email": "manukyan.artak.21@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3",
+    "laravel/framework": "5.6.*"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Harakiri\\Repository\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Harakiri\\Repository\\Providers\\EventServiceProvider",
+        "Harakiri\\Repository\\Providers\\RepositoryServiceProvider"
+      ]
+    }
+  }
+}
