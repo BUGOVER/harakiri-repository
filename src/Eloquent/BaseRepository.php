@@ -8,6 +8,7 @@ use Exception;
 use Harakiri\Repository\Contracts\CriteriaInterface;
 use Harakiri\Repository\Contracts\RepositoryCriteriaInterface;
 use Harakiri\Repository\Contracts\RepositoryInterface;
+use Harakiri\Repository\Criteria\Criteria;
 use Harakiri\Repository\Exceptions\RepositoryException;
 use Harakiri\Repository\Traits\RepositoryTrait;
 use Harakiri\Validator\Contracts\ValidatorInterface;
@@ -204,6 +205,16 @@ abstract class BaseRepository implements RepositoryInterface, RepositoryCriteria
     public function getCriteria(): Collection
     {
         return $this->criteria;
+    }
+
+    /**
+     * @param Criteria $criteria
+     * @return $this
+     */
+    public function getByCriteria(Criteria $criteria)
+    {
+        $this->modelQuery = $criteria->apply($this->modelQuery, $this);
+        return $this;
     }
 
     /**

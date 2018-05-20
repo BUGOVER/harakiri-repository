@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Harakiri\Repository\Contracts;
 
+use Harakiri\Repository\Criteria\Criteria;
 use Illuminate\Support\Collection;
 
 
@@ -33,25 +34,24 @@ interface RepositoryCriteriaInterface
     public function popCriteria($criteria);
 
     /**
-     * Get Collection of Criteria
-     *
-     * @return Collection
+     * @return mixed
      */
     public function getCriteria();
 
     /**
-     * Skip Criteria
-     *
+     * @param Criteria $criteria
+     * @return mixed
+     */
+    public function getByCriteria(Criteria $criteria);
+
+    /**
      * @param bool $status
-     *
-     * @return $this
+     * @return mixed
      */
     public function skipCriteria($status = true);
 
     /**
-     * Reset all Criterias
-     *
-     * @return $this
+     * @return mixed
      */
     public function resetCriteria();
 }
