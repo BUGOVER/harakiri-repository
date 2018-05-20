@@ -40,15 +40,6 @@ interface RepositoryCriteriaInterface
     public function getCriteria();
 
     /**
-     * Find data by Criteria
-     *
-     * @param CriteriaInterface $criteria
-     *
-     * @return mixed
-     */
-    public function getByCriteria(CriteriaInterface $criteria);
-
-    /**
      * Skip Criteria
      *
      * @param bool $status

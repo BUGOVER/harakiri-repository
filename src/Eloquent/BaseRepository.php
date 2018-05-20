@@ -94,7 +94,7 @@ abstract class BaseRepository implements RepositoryInterface, RepositoryCriteria
      *
      * @return string
      */
-    abstract public function model(): string;
+    abstract public function model();
 
     /**
      * Specify Validator class name of harakiri_repository_pattern\Validator\Contracts\ValidatorInterface
