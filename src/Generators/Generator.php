@@ -201,9 +201,6 @@ abstract class Generator
     public function getConfigGeneratorClassPath($class, $directoryPath = false)
     {
         switch ($class) {
-            case ('models' === $class):
-                $path = config('repository.generator.paths.models', 'Entities');
-                break;
             case ('repositories' === $class):
                 $path = config('repository.generator.paths.repositories', 'Repositories');
                 break;
@@ -289,7 +286,7 @@ abstract class Generator
     /**
      * Get options.
      *
-     * @return string
+     * @return array
      */
     public function getOptions()
     {

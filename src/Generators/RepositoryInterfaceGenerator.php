@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace Harakiri\Repository\Generators;
 
@@ -99,20 +100,7 @@ class RepositoryInterfaceGenerator extends Generator
         }
         $results = '[' . PHP_EOL;
 
-        foreach ($this->getSchemaParser()->toArray() as $column => $value) {
-            $results .= "\t\t'{$column}'," . PHP_EOL;
-        }
-
         return $results . "\t" . ']';
     }
 
-    /**
-     * Get schema parser.
-     *
-     * @return SchemaParser
-     */
-    public function getSchemaParser()
-    {
-        return new SchemaParser($this->fillable);
-    }
 }

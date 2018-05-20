@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace Harakiri\Repository\Generators;
 
@@ -36,8 +37,6 @@ class CriteriaGenerator extends Generator
     }
 
     /**
-     * Get destination path for generated file.
-     *
      * @return string
      */
     public function getPath()

@@ -4,8 +4,7 @@ declare(strict_types=1);
 $NAMESPACE$
 
 use Harakiri\Repository\Eloquent\BaseRepository;
-use Harakiri\Repository\Criteria\RequestCriteria;
-use $MODEL$;
+use Harakiri\Repository\Criteria\Criteria;
 
 /**
  * Class $CLASS$RepositoryEloquent.
