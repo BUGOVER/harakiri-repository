@@ -21,7 +21,7 @@ use Illuminate\Support\Collection;
  * @package harakiri_repository_pattern\Repository\Eloquent
  * @author Anderson Andrade <contato@andersonandra.de>
  */
-abstract class BaseRepository implements RepositoryInterface, RepositoryCriteriaInterface
+abstract class BaseRepository extends Model implements RepositoryInterface, RepositoryCriteriaInterface
 {
     use RepositoryTrait;
 
