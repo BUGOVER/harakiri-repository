@@ -294,4 +294,14 @@ abstract class BaseRepository implements RepositoryInterface, RepositoryCriteria
 
         return $this->model->pluck($column, $key);
     }
+
+    /**
+     * @param $name
+     * @param $argument
+     * @return Model
+     */
+    public function __call($name, $argument)
+    {
+        return $this->model;
+    }
 }
