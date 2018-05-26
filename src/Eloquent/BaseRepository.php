@@ -67,6 +67,7 @@ abstract class BaseRepository extends Model implements RepositoryInterface, Repo
      */
     public function __construct(Application $app)
     {
+        parent::__construct();
         $this->app = $app;
         $this->criteria = new Collection();
         $this->makeModel();
