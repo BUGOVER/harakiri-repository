@@ -21,7 +21,7 @@ use Illuminate\Support\Collection;
  * @package harakiri_repository_pattern\Repository\Eloquent
  * @author Anderson Andrade <contato@andersonandra.de>
  */
-abstract class BaseRepository extends Model implements RepositoryInterface, RepositoryCriteriaInterface
+abstract class BaseRepository implements RepositoryInterface, RepositoryCriteriaInterface
 {
     use RepositoryTrait;
 
@@ -67,7 +67,6 @@ abstract class BaseRepository extends Model implements RepositoryInterface, Repo
      */
     public function __construct(Application $app)
     {
-        parent::__construct();
         $this->app = $app;
         $this->criteria = new Collection();
         $this->makeModel();
