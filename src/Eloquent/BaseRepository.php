@@ -302,6 +302,7 @@ abstract class BaseRepository implements RepositoryInterface, RepositoryCriteria
      */
     public function __call($name, $argument)
     {
+        dd($name, $argument);
         return $this->model;
     }
 }
